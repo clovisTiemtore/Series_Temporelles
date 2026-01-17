@@ -24,7 +24,7 @@ Le cœur du projet repose sur la comparaison de séries via :
 ## Installation et Compilation
 
 ### Prérequis
-* Un compilateur C++ (GCC, Clang ou MSVC) supportant le C++11 ou supérieur.
+* Un compilateur C++ (GCC, ...).
 
 ### Compilation
 Utilisez la commande suivante dans votre terminal pour compiler l'ensemble du projet :
