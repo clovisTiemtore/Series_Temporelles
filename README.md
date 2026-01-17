@@ -1,4 +1,4 @@
-# 📈 Séries Temporelles - Classification & Génération
+# Séries Temporelles - Classification & Génération
 
 Ce projet en C++ propose une boîte d'outils complète pour la manipulation, la génération et la classification de séries temporelles. Il implémente notamment l'algorithme des **k-plus proches voisins (k-NN)** avec plusieurs métriques de distance avancées pour comparer des séquences temporelles.
 
