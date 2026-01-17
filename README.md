@@ -39,3 +39,8 @@ Distance.cpp \
 Knn.cpp \
 TimeSeriesGenerator.cpp \
 -o series_app
+```
+
+Exécution
+Sur Linux / macOS : ``` ./series_app ```
+Sur Windows : ``` .\series_app.exe ```
