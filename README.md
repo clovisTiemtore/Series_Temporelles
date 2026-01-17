@@ -1,42 +1,41 @@
-Series Temporelles is a C++ project for time series generation and classification using various similarity measures (Euclidean, DTW, EDR) and k-Nearest Neighbors (k-NN).
+# 📈 Séries Temporelles - Classification & Génération
 
-Features
+Ce projet en C++ propose une boîte d'outils complète pour la manipulation, la génération et la classification de séries temporelles. Il implémente notamment l'algorithme des **k-plus proches voisins (k-NN)** avec plusieurs métriques de distance avancées pour comparer des séquences temporelles.
 
-Generate synthetic time series: Gaussian, Sinusoidal, Step
+## Fonctionnalités
 
-Compute similarity with Euclidean, DTW, and EDR
+### 1. Générateurs de Séries (Synthesize Data)
+Le projet permet de générer des données synthétiques pour tester les algorithmes :
+* **GaussianGenerator** : Génération de bruit blanc gaussien.
+* **SinWaveGenerator** : Séries basées sur des ondes sinusoïdales.
+* **StepGenerator** : Séries temporelles en "marches d'escalier" (changements brusques).
 
-Classify time series with k-NN
+### 2. Mesures de Similarité (Distances)
+Le cœur du projet repose sur la comparaison de séries via :
+* **Distance Euclidienne** : Pour les séries de même longueur et parfaitement alignées.
+* **Dynamic Time Warping (DTW)** : Pour comparer des séries avec des décalages temporels ou des vitesses variées.
+* **EDR (Edit Distance on Real sequences)** : Robuste aux bruits et aux outliers.
 
-Configurable parameters for series type, distance metric, and k
+### 3. Classification
+* Implémentation de l'algorithme **k-NN (k-Nearest Neighbors)** pour prédire la classe d'une série temporelle inconnue en se basant sur un dataset d'entraînement.
 
-Technologies
+---
 
-C++
+## Installation et Compilation
 
-Command-line execution
+### Prérequis
+* Un compilateur C++ (GCC, Clang ou MSVC) supportant le C++11 ou supérieur.
 
-Project Structure
+### Compilation
+Utilisez la commande suivante dans votre terminal pour compiler l'ensemble du projet :
 
-main.cpp – program entry point
-
-GaussianGenerator.cpp – Gaussian series generator
-
-SinWaveGenerator.cpp – Sinusoidal series generator
-
-StepGenerator.cpp – Step function generator
-
-TimeSeriesDataSet.cpp – dataset management
-
-TimeSeriesGenerator.cpp – helper functions
-
-Distance.cpp – similarity measures
-
-KNN.cpp – k-NN classifier
-
-Capture.png – sample output
-
-Compilation & Execution
-g++ main.cpp GaussianGenerator.cpp SinWaveGenerator.cpp StepGenerator.cpp TimeSeriesDataSet.cpp Distance.cpp KNN.cpp TimeSeriesGenerator.cpp -o test
-./test      # Linux
-.\test.exe  # Windows
+```bash
+g++ main.cpp \
+GaussianGenerator.cpp \
+SinWaveGenerator.cpp \
+StepGenerator.cpp \
+TimeSeriesDataset.cpp \
+Distance.cpp \
+Knn.cpp \
+TimeSeriesGenerator.cpp \
+-o series_app
