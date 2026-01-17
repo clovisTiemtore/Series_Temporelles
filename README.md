@@ -1,22 +1,38 @@
-Traitement de séries temporelles : génération de données synthétiques et classification via l'algorithme k-NN.
+# Séries Temporelles : Génération et Classification
 
-Fonctionnalités
-Générateurs : Gaussien, Sinusoïdal, Step.
+Ce projet en C++ est dédié au traitement de séries temporelles, incluant la génération de signaux synthétiques et la classification par l'algorithme k-NN.
 
-Métriques : Euclidienne, DTW (Dynamic Time Warping) et EDR.
+---
 
-Classification : Prédiction de classe par k-NN.
+## Fonctionnalités principales
 
+* **Générateurs de données** : Création de signaux Gaussiens, Sinusoïdaux et Step.
+* **Mesures de similarité** : 
+    * Distance Euclidienne.
+    * Dynamic Time Warping (DTW).
+    * Edit Distance on Real sequences (EDR).
+* **Classification** : Algorithme k-Nearest Neighbors (k-NN) adapté aux séquences temporelles.
 
-Compilation & Exécution
+---
 
-Compilation :
+## Installation et Compilation
 
-Bash
-
+**Compilation :**
+Utilisez la commande suivante pour compiler tous les fichiers source :
+```bash
 g++ *.cpp -o series_app
-Lancement :
+```
 
-Windows : .\series_app.exe
+Exécution :
 
-Linux/macOS : ./series_app
+Windows :
+```
+Bash
+.\series_app.exe
+```
+
+Linux / macOS :
+```
+Bash
+./series_app
+```
